@@ -661,10 +661,6 @@ i:hover,
 /* MOVIL */
 @media (max-width: 575.98px) {
 
-  html {
-    border: solid red 2px;
-  }
-
   .header {
     height: 100%;
     width: 100%;
