@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+
+:root {
+  --azul: #0C84F2;
+  --azulOscuro: #3A5BA0;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gris: #303030;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  border: solid red 1px
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  background: var(--black);
+}
+
+/* GLOBALES */
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  object-fit: cover;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  font-size: 17px;
+  color: var(--white);
+  margin-bottom: 20px;
+  display: list-item;
+  padding: 22px 25px;
+  letter-spacing: 1.85px;
+}
+
+button {
+  display: inline-block;
+  background: transparent;
+  appearance: none;
+  color: var(--white);
+  letter-spacing: 1.71px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  padding: 15px 40px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-bottom: 120px;
+}
+
+/* UTILIDADES */
+.letras-azules {
+  color: var(--azul);
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  position: static;
+  width: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-image: url(../fotosNekoma/fondo.webp);
+  background-position: 50% 90%;
+  background-size: cover;
+  padding: 50px 30px;
+  height: 100vh;
+}
+
+.header-texto {
+  color: var(--white);
+  font-size: 30px;
+  font-family: 'Baloo Da 2', cursive;
+  text-align: center;
+  margin: 15% 0;
+}
+
+.nombre-nekoma {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+/* NAVEGACION */
+.logo {
+  margin-left: 50px;
+  color: var(--white);
+}
+
+.nav-main {
+  font-family: 'Aclonica', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-main ul {
+  font-size: 18px;
+}
+
+.menu-btn {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: var(white);
+  width: 0px;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+/*Nav left*/
+.nav-main ul {
+  display: flex;
+
+}
+
+.nav-main ul li {
+  padding: 5px;
+  color: var(--white);
+}
+
+.nav-main ul li a {
+  padding: 38px;
+}
+
+.nav-main ul li a:hover {
+  color: var(--azul);
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 150px;
+}
+
+/* RESUMEN */
+.resumen {
+  display: grid;
+  background-color: var(--azulOscuro);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+  gap: 30px;
+}
+
+.texto-resumen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  line-height: 45px;
+  text-align: justify;
+  font-family: 'Belgrano', serif;
+  font-size: 23px;
+}
+
+.img-resumen {
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 160px;
+}
+
+/* TEAM NEKOMA */
+.team-nekoma {
+  width: 100%;
+}
+
+.team-nekoma>img {
+  border-radius: 5px;
+  width: 839px;
+  margin-top: 120px;
+}
+
+.sobre-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--black);
+  gap: 30px;
+  padding: 20px;
+}
+
+.title-sobre-nosotros {
+  color: var(--white);
+  font-family: 'Aclonica', sans-serif;
+  font-size: 40px;
+  height: 100px;
+  margin-top: 30px;
+  text-align: center;
+  width: 500px;
+}
+
+.texto-sobre-nosotros {
+  color: var(--white);
+  margin-top: -370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  font-family: 'Belgrano', serif;
+  margin-bottom: 0px;
+}
+
+.mismo-bg {
+  background-color: #161515;
+  padding-bottom: 200px;
+}
+
+/* GALERIA */
+.galeria {
+  margin-top: -90px;
+}
+
+.galeria>h3 {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 50px;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  margin-top: 85px;
+  padding-top: 80px;
+}
+
+.galeria-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 25px;
+  margin: 60px auto;
+}
+
+.imagenes-jugadores {
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 80%;
+  height: 100%;
+  transition: box-shadow .5s;
+  overflow: hidden;
+}
+
+.imagenes-jugadores:hover {
+  -webkit-box-shadow: 0px 0px 10px 7px rgba(12, 132, 242, 1);
+  -moz-box-shadow: 0px 0px 10px 7px rgba(12, 132, 242, 1);
+  box-shadow: 0px 0px 10px 7px rgba(12, 132, 242, 1);
+}
+
+/* UBICACION */
+.ubicacion {
+  color: var(--white);
+  font-family: 'Belgrano', serif;
+  background-color: var(--azulOscuro);
+  border: solid transparent 2px;
+  padding-bottom: 90px;
+}
+
+.ubicacion h3 {
+  color: var(--white);
+  font-family: 'Aclonica', sans-serif;
+  font-size: 40px;
+  margin-left: 74px;
+  margin-top: 40px;
+}
+
+.insurgentes {
+  font-size: 43px;
+  line-height: 85px;
+  text-transform: uppercase;
+  margin: 100px 0px 20px 90px;
+  width: 400px;
+  text-align: end;
+  font-family: 'Belgrano', serif;
+}
+
+.nro-celular {
+  font-size: 38px;
+  margin: 0 0 20px 0;
+  margin-left: 90px;
+  text-align: end;
+  width: 400px;
+  font-weight: bold;
+}
+
+.direccion {
+  font-size: 18px;
+  width: 350px;
+  text-align: end;
+  line-height: 30px;
+  margin-left: 130px;
+  font-family: 'Belgrano', serif;
+  text-transform: uppercase;
+}
+
+.google-maps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -360px;
+  margin-left: 400px;
+}
+
+#ubicacion-enlace {
+  position: absolute;
+  top: 2900px;
+}
+
+/* CONTACTO */
+.contacto {
+  background-color: black;
+  color: var(--white);
+  font-family: 'Baloo Da 2', cursive;
+}
+
+.contactanos {
+  font-family: 'Aclonica', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  text-transform: uppercase;
+}
+
+.vive-la-experiencia {
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  line-height: 67px;
+  width: 490px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 70px;
+  margin-top: 200px;
+}
+
+.entrena-gratis {
+  position: relative;
+  top: 80px;
+  font-size: 28px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+.formulario {
+  margin-left: 750px;
+  margin-top: -200px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+#trucazo {
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--black);
+  color: var(--white);
+  padding: 50px;
+}
+
+.navegacion-footer>a {
+  width: 6px;
+  display: list-item;
+  line-height: 30px;
+  margin-left: 100px;
+  color: var(--white);
+  font-weight: bolder;
+}
+
+.privacidad {
+  position: absolute;
+  text-align: center;
+}
+
+i {
+  text-align: center;
+  margin-top: 45px;
+  color: var(--white);
+  font-size: 35px;
+  text-decoration: none;
+  margin-left: 150px;
+}
+
+.derechos-autor {
+  font-size: 20px;
+  width: 535px;
+  margin-left: -40px;
+  margin-top: 55px;
+  font-weight: 900;
+}
+
+.privacidad {
+  left: 620px;
+  font-size: 15px;
+  color: var(--white);
+  margin-top: 100px;
+}
+
+.fa-instagram {
+  position: relative;
+  bottom: 82px;
+  left: 70px;
+  font-size: 40px;
+}
+
+i:hover,
+.navegacion-footer>a:hover,
+.navegacion-enlace:hover {
+  color: var(--azul);
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .arriba {
+    top: 930px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    font-size: 40px;
+    width: 245px;
+  }
+
+  .menu-btn {
+    display: block;
+    top: 48px;
+    right: 400px;
+  }
+
+  .fa-bars {
+    font-size: 50px;
+  }
+
+  .header-texto {
+    margin: 43% 0;
+  }
+
+  /* NAVEGACIÓN */
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    opacity: .9;
+    transform: translateX(-1200px);
+    transition: transform .5s ease-in-out;
+  }
+
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-150px);
+  }
+
+  .nav-main ul.nav-menu li {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 70px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  /* RESUMEN */
+  .resumen {
+    margin-top: 0;
+  }
+
+  .texto-resumen {
+    line-height: normal;
+    font-size: 25px;
+  }
+
+  .img-resumen {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+
+  /* TEAM NEKOMA */
+  .sobre-nosotros {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    height: 100vh;
+  }
+
+  .team-nekoma>img {
+    border-radius: 5px;
+    width: 839px;
+    margin-top: -100px;
+  }
+
+  .title-sobre-nosotros {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  .texto-sobre-nosotros {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 150px;
+  }
+
+  /* GALERÍA */
+  .galeria {
+    margin-top: -90px;
+    height: 50vh;
+  }
+
+  .galeria>h3 {
+    font-size: 40px;
+  }
+
+  .galeria-img {
+    display: flex;
+    overflow-x: scroll;
+    width: 60%;
+    scroll-snap-type: x mandatory;
+    margin: 20px auto;
+
+  }
+
+  .imagenes-jugadores {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 50px;
+    scroll-snap-align: start;
+  }
+
+  /* UBICACION */
+  .ubicacion {
+    margin-top: 0;
+    font-family: 'Belgrano', serif;
+    height: 100vh;
+  }
+
+  .insurgentes {
+    font-size: 38px;
+    margin: 100px 0px 20px -50px;
+  }
+
+  .nro-celular {
+    margin: 0 0 20px 0;
+    margin-left: -65px;
+    text-align: end;
+  }
+
+  .direccion {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .google-maps {
+    margin-top: -360px;
+    margin-left: 390px;
+    width: 45%;
+  }
+
+  #ubicacion-enlace {
+    position: relative;
+    top: -50px;
+  }
+
+  /* CONTACTO */
+  .contactanos {
+    font-size: 40px;
+    top: 60px;
+  }
+
+  .vive-la-experiencia {
+    top: 100px;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  .entrena-gratis {
+    font-size: 28px;
+    margin: 0 auto;
+    top: 120px;
+  }
+
+  .formulario {
+    margin-left: 270px;
+    margin-top: 160px;
+  }
+
+  /* FOOTER */
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .navegacion-footer>a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  i {
+    text-align: center;
+    margin-left: 290px;
+    margin-top: 0px;
+  }
+
+  .derechos-autor {
+    margin: 50px auto;
+  }
+
+  .fa-instagram {
+    bottom: 37px;
+  }
+}
+
+/* MOVIL */
+@media (max-width: 575.98px) {
+  .arriba {
+    top: 500px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .fa-arrow-up {
+    padding: 5px;
+    font-size: 33px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .header {
+    height: 70vh;
+    flex-direction: column-reverse;
+  }
+
+  .header-texto {
+    font-size: 15px;
+    line-height: 50px;
+    margin: 20% auto;
+  }
+
+  .nombre-nekoma {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .logo {
+    font-size: 21px;
+    margin-top: -29px;
+    margin-left: 20px;
+  }
+
+  .menu-btn {
+    cursor: none;
+    top: -8px;
+    right: 225px;
+    color: var(--white);
+  }
+
+  /* NAVEGACIÓN */
+  .nav-main ul.nav-menu {
+    width: 100%;
+    padding: 30px;
+    opacity: .9;
+    transform: translateX(-800px);
+    transition: transform .5s ease-in-out;
+  }
+
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-150px);
+  }
+
+  .nav-main ul.nav-menu li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 70px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .fa-bars {
+    font-size: 35px;
+  }
+
+  /* RESUMEN */
+  .resumen {
+    margin-top: 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .texto-resumen {
+    line-height: 30px;
+    font-size: 15px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .img-resumen {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  /* TEAM NEKOMA */
+  .sobre-nosotros {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    height: 1200px;
+  }
+
+  .team-nekoma>img {
+    width: 320px;
+  }
+
+  .title-sobre-nosotros {
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+  }
+
+  .texto-sobre-nosotros {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: -245px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  /* GALERÍA */
+  .galeria {
+    margin-top: -88px;
+  }
+
+  .galeria>h3 {
+    font-size: 30px;
+  }
+
+  .galeria-img {
+    width: 300px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 20px auto;
+    object-fit: cover;
+    height: 300px;
+  }
+
+  .imagenes-jugadores {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 50px;
+    scroll-snap-align: center;
+
+  }
+
+  .imagenes-jugadores:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  /* UBICACION */
+  .ubicacion {
+    margin-top: 0;
+    font-family: 'Belgrano', serif;
+  }
+
+  .ubicacion h3 {
+    font-size: 30px;
+    width: 300px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .insurgentes {
+    font-size: 18px;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin: 40px 0px 20px 50px;
+    text-align: start;
+    width: 200px;
+  }
+
+  .nro-celular {
+    margin: -80px 0 20px -30px;
+    text-align: end;
+    font-size: 30px;
+  }
+
+  .direccion {
+    font-size: 18px;
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .google-maps {
+    margin: 0 auto;
+  }
+
+  #ubicacion-enlace {
+    position: relative;
+    top: 10px;
+  }
+
+  /* CONTACTO */
+  .contactanos {
+    font-size: 30px;
+  }
+
+  .vive-la-experiencia {
+    font-size: 28px;
+    line-height: 40px;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .entrena-gratis {
+    top: 120px;
+    font-size: 25px;
+    width: 300px;
+  }
+
+  .formulario {
+    margin: 150px 90px;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  /* FOOTER */
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    margin-top: -200px;
+  }
+
+  .navegacion-footer>a {
+    width: 20%;
+    display: inline-block;
+    margin-left: 13px;
+  }
+
+  .derechos-autor {
+    font-size: 15px;
+    width: 100%;
+    font-weight: 900;
+    text-align: center;
+    margin: 35px 0;
+  }
+
+  i {
+    margin-top: 25px;
+    font-size: 35px;
+    margin-left: 150px;
+  }
+
+  .fa-instagram {
+    bottom: 62px;
+  }
+}
+
+/* MOVIL PEQUEÑO */
+@media (max-width: 400px) {}
