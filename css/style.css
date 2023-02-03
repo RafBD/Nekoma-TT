@@ -19,7 +19,6 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
-  border: solid red 1px
 }
 
 body {
@@ -661,23 +660,14 @@ i:hover,
 
 /* MOVIL */
 @media (max-width: 575.98px) {
-  .arriba {
-    top: 500px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-  }
 
-  .fa-arrow-up {
-    padding: 5px;
-    font-size: 33px;
-    height: 40px;
-    width: 40px;
+  html {
+    border: solid red 2px;
   }
 
   .header {
-    height: 70vh;
-    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
   }
 
   .header-texto {
@@ -750,7 +740,6 @@ i:hover,
   /* TEAM NEKOMA */
   .sobre-nosotros {
     grid-template-columns: repeat(1, 1fr);
-    padding: 30px;
     height: 1200px;
   }
 
@@ -767,9 +756,6 @@ i:hover,
   .texto-sobre-nosotros {
     text-align: justify;
     font-size: 20px;
-    margin-top: -245px;
-    margin-bottom: 0;
-    padding: 0;
   }
 
   /* GALERÍA */
@@ -786,6 +772,7 @@ i:hover,
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scroll-snap-align: none center;
     margin: 20px auto;
     object-fit: cover;
     height: 300px;
@@ -795,39 +782,38 @@ i:hover,
     flex: 0 0 100%;
     padding: 24px;
     border-radius: 50px;
-    scroll-snap-align: center;
+    scroll-snap-align: none center;
+    scroll-snap-type: x mandatory;
 
   }
 
   .imagenes-jugadores:hover {
     -webkit-transform: none;
     transform: none;
+    box-shadow: none;
   }
 
   /* UBICACION */
   .ubicacion {
-    margin-top: 0;
-    font-family: 'Belgrano', serif;
+    height: 100%;
   }
 
   .ubicacion h3 {
+    margin: 0;
+    margin-top: 2rem;
     font-size: 30px;
-    width: 300px;
-    line-height: 40px;
     text-align: center;
   }
 
   .insurgentes {
     font-size: 18px;
     line-height: 45px;
-    text-transform: uppercase;
-    margin: 40px 0px 20px 50px;
+    margin: 40px 0px 0px 50px;
     text-align: start;
-    width: 200px;
   }
 
   .nro-celular {
-    margin: -80px 0 20px -30px;
+    margin: -70px 0 80px -30px;
     text-align: end;
     font-size: 30px;
   }
@@ -835,11 +821,12 @@ i:hover,
   .direccion {
     font-size: 18px;
     text-align: center;
-    margin: 50px auto;
   }
 
   .google-maps {
-    margin: 0 auto;
+    margin: 30px auto;
+    width: 100%;
+    height: fit-content;
   }
 
   #ubicacion-enlace {
@@ -869,10 +856,6 @@ i:hover,
     margin: 150px 90px;
   }
 
-  button:hover {
-    background-color: rgba(255, 255, 255, .2);
-  }
-
   /* FOOTER */
   footer {
     grid-template-columns: repeat(1, 1fr);
@@ -889,7 +872,6 @@ i:hover,
   .derechos-autor {
     font-size: 15px;
     width: 100%;
-    font-weight: 900;
     text-align: center;
     margin: 35px 0;
   }
